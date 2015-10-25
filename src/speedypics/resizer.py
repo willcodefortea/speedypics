@@ -1,16 +1,12 @@
 import base64
 import cStringIO
 from PIL import Image
-from fractions import gcd
 
 
 def resize_image(image, minimum_dimension=2):
     """Resize to the smallest possible version of this image"""
     original_width, original_height = image.size
     aspect_ratio = original_height * 1.0 / original_width
-
-    print image.size
-    print 'Aspect Ratio', aspect_ratio
 
     if aspect_ratio > 1:
         new_width = minimum_dimension
@@ -20,7 +16,6 @@ def resize_image(image, minimum_dimension=2):
         new_width = int(new_height / aspect_ratio)
 
     new_size = (new_width, new_height)
-    print new_size
     small = image.resize(new_size, Image.ANTIALIAS)
     return small
 
