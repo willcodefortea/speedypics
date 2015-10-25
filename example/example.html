@@ -13,7 +13,19 @@
         </style>
     </head>
     <body>
-        <img src="https://octodex.github.com/images/baracktocat.jpg" width="400px" height="400px" class="" />
-        <img src="https://octodex.github.com/images/baracktocat.jpg" width="400px" height="400px" class="image-1" />
+        <img src="https://octodex.github.com/images/baracktocat.jpg" width="400px" height="400px" />
+        <img data-src="https://octodex.github.com/images/baracktocat.jpg" width="400px" height="400px" class="speedypic image-1" />
+
+        <script src="../src/speedypics/static/speedypics/speedypics.js"></script>
+
+        <script>
+            var elements = document.getElementsByClassName('speedypic');
+
+            for (var i = 0; i<elements.length; i++) {
+                sp = new Speedypic(elements[i], {
+                    autoLoad: true
+                });
+            }
+        </script>
     </body>
 </html>
