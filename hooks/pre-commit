@@ -1,0 +1,12 @@
+#!/bin/bash
+
+failed=0
+for filename in hooks/pre-commit.*; do
+  if [ -f "$filename" ]; then
+    if ! $filename; then
+      failed=1
+    fi
+  fi
+done
+
+exit $failed
