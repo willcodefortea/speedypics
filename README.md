@@ -2,7 +2,7 @@
 
 Give your users something to look at while your full images load!
 
-![](https://raw.githubusercontent.com/willcodefortea/speedypics/master/example/before.gif?v1) ![](https://raw.githubusercontent.com/willcodefortea/speedypics/master/example/after.gif?v1)
+![](https://raw.githubusercontent.com/willcodefortea/speedypics/master/example/before.gif?v2) ![](https://raw.githubusercontent.com/willcodefortea/speedypics/master/example/after.gif?v2)
 
 ## Goals
 
